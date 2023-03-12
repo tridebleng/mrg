@@ -76,7 +76,7 @@ function LOGO() {
  ───│    $Green┌─┐┬ ┬┌┬┐┌─┐┌─┐┌─┐┬─┐┬┌─┐┌┬┐  ┬  ┬┌┬┐┌─┐$NC   │───
  ───│    $Green├─┤│ │ │ │ │└─┐│  ├┬┘│├─┘ │   │  │ │ ├┤ $NC   │───
  ───│    $Green┴ ┴└─┘ ┴ └─┘└─┘└─┘┴└─┴┴   ┴   ┴─┘┴ ┴ └─┘$NC   │───
-    │                    ${YELLOW}~/.MRG${FONT}              $NC       │
+    │                    ${YELLOW}~/.ARTA MAULANA${FONT}              $NC       │
     └───────────────────────────────────────────────┘
          ${RED}Autoscript xray vpn lite (multi port)${FONT}    
            ${RED}licence script (ARTA lifetime) ${FONT}
@@ -492,7 +492,7 @@ function install_sc() {
 clear
 LOGO
 echo -e "${RED}JANGAN INSTALL SCRIPT INI MENGGUNAKAN KONEKSI VPN!!!${FONT}"
-echo -e "${YELLOW}CONTOH SSH WS SILAHKAN DI BAWA BUG.MU/FIGHTERTUNNEL${FONT}"
+echo -e "${YELLOW}SCRIPT ARTA MAULANA VPS !!!!${FONT}"
 echo -e ""
 echo -e "1).${Green}Start To Install${FONT}"
 echo -e "2).${Green}Exit${FONT}"
