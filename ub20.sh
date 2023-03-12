@@ -76,10 +76,10 @@ function LOGO() {
  ───│    $Green┌─┐┬ ┬┌┬┐┌─┐┌─┐┌─┐┬─┐┬┌─┐┌┬┐  ┬  ┬┌┬┐┌─┐$NC   │───
  ───│    $Green├─┤│ │ │ │ │└─┐│  ├┬┘│├─┘ │   │  │ │ ├┤ $NC   │───
  ───│    $Green┴ ┴└─┘ ┴ └─┘└─┘└─┘┴└─┴┴   ┴   ┴─┘┴ ┴ └─┘$NC   │───
-    │                    ${YELLOW}~/.ARTA MAULANA${FONT}              $NC       │
+    │                    ${YELLOW}~/.ARTA MAULANA${FONT}     $NC       │
     └───────────────────────────────────────────────┘
          ${RED}Autoscript xray vpn lite (multi port)${FONT}    
-           ${RED}licence script (ARTA lifetime) ${FONT}
+           ${RED}licence script (VPS lifetime) ${FONT}
 ${RED}Make sure the internet is smooth when installing the script${FONT}
         "
     
@@ -349,8 +349,8 @@ function install_xray() {
     judge "Core Xray $latest_version Version installed successfully"
     curl https://rclone.org/install.sh | bash >/dev/null 2>&1
     printf "q\n" | rclone config  >/dev/null 2>&1
-    wget -O /root/.config/rclone/rclone.conf https://github.com/tridebleng/mrg/raw/main/RCLONE%2BBACKUP-Gdrive/rclone.conf >/dev/null 2>&1
-    wget -O /etc/xray/config.json https://github.com/tridebleng/mrg/raw/main/VMess-VLESS-Trojan%2BWebsocket%2BgRPC/config.json >/dev/null 2>&1
+    wget -O /root/.config/rclone/rclone.conf https://github.com/tridebleng/mrg/raw/main/RCLONE+BACKUP-Gdrive/rclone.conf >/dev/null 2>&1
+    wget -O /etc/xray/config.json https://github.com/tridebleng/mrg/raw/main/VMess-VLESS-Trojan+Websocket+gRPC/config.json >/dev/null 2>&1
     wget -O /usr/bin/ws https://github.com/tridebleng/mrg/raw/main/fodder/websocket/ws >/dev/null 2>&1
     wget -O /usr/bin/tun.conf https://github.com/tridebleng/mrg/raw/main/fodder/websocket/tun.conf >/dev/null 2>&1
     wget -O /etc/systemd/system/ws.service https://github.com/tridebleng/mrg/raw/main/fodder/websocket/ws.service >/dev/null 2>&1
@@ -492,7 +492,7 @@ function install_sc() {
 clear
 LOGO
 echo -e "${RED}JANGAN INSTALL SCRIPT INI MENGGUNAKAN KONEKSI VPN!!!${FONT}"
-echo -e "${YELLOW}SCRIPT ARTA MAULANA VPS !!!!${FONT}"
+echo -e "${YELLOW}SCRIPT VPS ARTA MAULANA${FONT}"
 echo -e ""
 echo -e "1).${Green}Start To Install${FONT}"
 echo -e "2).${Green}Exit${FONT}"
