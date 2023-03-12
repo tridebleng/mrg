@@ -79,7 +79,7 @@ function LOGO() {
     │                    ${YELLOW}~/.MRG${FONT}              $NC       │
     └───────────────────────────────────────────────┘
          ${RED}Autoscript xray vpn lite (multi port)${FONT}    
-           ${RED}no licence script (free lifetime) ${FONT}
+           ${RED}licence script (ARTA lifetime) ${FONT}
 ${RED}Make sure the internet is smooth when installing the script${FONT}
         "
     
