@@ -58,10 +58,10 @@ function is_root() {
 
 judge() {
     if [[ 0 -eq $? ]]; then
-        print_ok "$1 Complete... | thx to ${YELLOW}~/.MRG${FONT}"
+        print_ok "$1 Complete... | thx to ${YELLOW}~/.ARTA${FONT}"
         sleep 1
     else
-        print_error "$1 Fail... | thx to ${YELLOW}~/.MRG${FONT}"
+        print_error "$1 Fail... | thx to ${YELLOW}~/.ARTA${FONT}"
         # // exit 1
     fi
     
@@ -349,8 +349,8 @@ function install_xray() {
     judge "Core Xray $latest_version Version installed successfully"
     curl https://rclone.org/install.sh | bash >/dev/null 2>&1
     printf "q\n" | rclone config  >/dev/null 2>&1
-    wget -O /root/.config/rclone/rclone.conf https://github.com/tridebleng/mrg/raw/main/RCLONE+BACKUP-Gdrive/rclone.conf >/dev/null 2>&1
-    wget -O /etc/xray/config.json https://github.com/tridebleng/mrg/raw/main/VMess-VLESS-Trojan+Websocket+gRPC/config.json >/dev/null 2>&1
+    wget -O /root/.config/rclone/rclone.conf https://github.com/tridebleng/mrg/raw/main/RCLONE%2BBACKUP-Gdrive/rclone.conf >/dev/null 2>&1
+    wget -O /etc/xray/config.json https://github.com/tridebleng/mrg/raw/main/VMess-VLESS-Trojan%2BWebsocket%2BgRPC/config.json >/dev/null 2>&1
     wget -O /usr/bin/ws https://github.com/tridebleng/mrg/raw/main/fodder/websocket/ws >/dev/null 2>&1
     wget -O /usr/bin/tun.conf https://github.com/tridebleng/mrg/raw/main/fodder/websocket/tun.conf >/dev/null 2>&1
     wget -O /etc/systemd/system/ws.service https://github.com/tridebleng/mrg/raw/main/fodder/websocket/ws.service >/dev/null 2>&1
