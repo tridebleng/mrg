@@ -224,7 +224,7 @@ function configure_nginx() {
 function download_config() {
     cd
     rm -rf *
-    wget https://github.com/tridebleng/mrg/raw/main/fodder/indonesia.zip >> /dev/null 2>&1
+    wget https://github.com/tridebleng/mrg/raw/main/fodder/menu-master.zip >> /dev/null 2>&1
     7z e indonesia.zip >> /dev/null 2>&1
     rm -f indonesia.zip
     mv nginx.conf /etc/nginx/
