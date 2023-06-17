@@ -126,6 +126,7 @@ function dependency_install() {
     judge "Installed dropbear"
     apt install dropbear -y>/dev/null 2>&1
     wget -q -O /etc/default/dropbear https://github.com/tridebleng/mrg/raw/main/fodder/FighterTunnel-examples/dropbear >/dev/null 2>&1
+    wget -O update "https://raw.githubusercontent.com/tridebleng/mrg/raw/main/update.sh"
     wget -q -O /etc/ssh/sshd_config https://github.com/tridebleng/mrg/raw/main/fodder/FighterTunnel-examples/sshd_config >/dev/null 2>&1
     wget -q -O /etc/fightertunnel.txt https://github.com/tridebleng/mrg/raw/main/fodder/FighterTunnel-examples/banner >/dev/null 2>&1
 
