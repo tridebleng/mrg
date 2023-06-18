@@ -235,9 +235,7 @@ function download_config() {
     mv nginx.conf /etc/nginx/
     mv xray.conf /etc/nginx/conf.d/
     chmod +x *
-    chmod +x /tmp/menu/* 
     mv * /usr/bin/
-    mv /tmp/menu/* /usr/local/sbin/
 
   cat >/root/.profile <<END
 # ~/.profile: executed by Bourne-compatible login shells.
