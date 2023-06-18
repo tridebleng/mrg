@@ -129,6 +129,11 @@ function dependency_install() {
     wget -O update "https://raw.githubusercontent.com/tridebleng/mrg/raw/main/update.sh"
     wget -q -O /etc/ssh/sshd_config https://github.com/tridebleng/mrg/raw/main/fodder/FighterTunnel-examples/sshd_config >/dev/null 2>&1
     wget -q -O /etc/fightertunnel.txt https://github.com/tridebleng/mrg/raw/main/fodder/FighterTunnel-examples/banner >/dev/null 2>&1
+# > pasang gotop
+    gotop_latest="$(curl -s https://api.github.com/repos/xxxserxxx/gotop/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
+    gotop_link="https://github.com/xxxserxxx/gotop/releases/download/v$gotop_latest/gotop_v"$gotop_latest"_linux_amd64.deb"
+    curl -sL "$gotop_link" -o /tmp/gotop.deb
+    dpkg -i /tmp/gotop.deb >/dev/null 2>&1
 
     judge "Installed msmtp-mta ca-certificates"
     apt install msmtp-mta ca-certificates bsd-mailx -y >/dev/null 2>&1
